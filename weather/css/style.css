@@ -1,0 +1,42 @@
+.container {
+    background-color:rgba(255,255,255,0.4);
+    border:#fff solid 0.01em;
+    border-radius: 0.2em;
+    left:25%;
+    position: absolute;
+    top:10%;
+    width:50em;
+}
+.main {
+    color: black;
+    text-align: center;
+}
+h1 {
+    font-size: 5em;
+}
+.location {
+    font-size: 2em;
+}
+.local-name, #temperature {
+    color:#144E5B;
+}
+.desc{
+    font-size: 0.8em;
+}
+.degrees {
+    margin: auto;
+}
+.toggle {  
+    float: right;
+    top: -7em;
+    right: 15em;
+}
+.temp {
+    margin: 0 auto;
+}
+#temperature {
+    font-size: 80px;
+}
+.fa-map-marker {
+    color: #9C2F55;
+}
