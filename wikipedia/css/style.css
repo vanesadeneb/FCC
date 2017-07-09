@@ -1,0 +1,16 @@
+html {
+    background: url("../img/wiki.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.container {
+    background-color:rgba(255,255,255,0.4);
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 0 auto;
+}
+h1 {
+    text-align: center;
+    font-size: 4em;
+    font-weight: 100;
+}
