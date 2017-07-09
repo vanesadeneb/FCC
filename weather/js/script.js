@@ -1,16 +1,17 @@
-var load = function() {
-  var url = "http://api.openweathermap.org/data/2.5/weather?q=Hermosillo,MX&APPID=ae2f419ea5acffef9a3f1b6b3ac2b579";
+
+//Get weather
+function get_weather(url){
   var unit = "metric";
   var html = "";
   var temp_unit = "";
 
-    $.getJSON(url, {units: unit}, function(json){
-      html += "<p class='local-name'><i class='fa fa-map-marker' aria-hidden='true'> </i> " + json.name + ", " + json.sys.country + "</p>";         
-      html += "<p class='desc'>" + json.weather[0].description + "</p>";
-      $(".location").html(html);
-      temp_unit = "<p id='temperature'>" + json.main.temp + "</p>";
-      $(".temp").html(temp_unit );
-    });
+  $.getJSON(url, {units: unit}, function(json){
+    html += "<p class='local-name'><i class='fa fa-map-marker' aria-hidden='true'> </i> " + json.name + ", " + json.sys.country + "</p>";         
+    html += "<p class='desc'>" + json.weather[0].description + "</p>";
+    $(".location").html(html);
+    temp_unit = "<p id='temperature'>" + json.main.temp + "</p>";
+    $(".temp").html(temp_unit );
+  });
 
   //Unit temperature control 
   $(function() {
@@ -62,6 +63,13 @@ var load = function() {
       $(".temp-img").attr("src","icons/snowflake.png");
     }
 
+    if(weatherId == 761){
+      console.log("dust!");
+      $("html").css("background", "url('img/dust.jpeg') no-repeat center center fixed");
+      $("html").css("background-size", "cover");
+      $(".temp-img").attr("src","icons/dust.png");
+    }
+
     if(weatherId == 800){
       console.log("despejado!");
       $("html").css("background", "url('img/despejado.jpg') no-repeat center center fixed");
@@ -75,12 +83,19 @@ var load = function() {
       $("html").css("background-size", "cover");
       $(".temp-img").attr("src","icons/clouds.png");
     }
-  });
+    console.log(url);
+  }); 
+};
   
+var load = function() {
+  navigator.geolocation.getCurrentPosition(setLocation);
+  function setLocation(position){
+    var lat = position.coords.latitude;
+    var lon = position.coords.longitude;
+    var url = "http://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon=" + lon + "&APPID=ae2f419ea5acffef9a3f1b6b3ac2b579";
+
+    get_weather(url);    
+  
+  };
 }
-
-
-
-
 $(document).ready(load);
-
