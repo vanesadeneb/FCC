@@ -26,17 +26,15 @@ h1 {
 .degrees {
     margin: auto;
 }
-.unit {
-    float:right;
-}
 .toggle {  
     float: right;
     top: -7em;
-    right: 15em;
+    right: 12em;
 }
-.temp {
+.temp {   
     box-sizing: border-box;
     margin: 0 auto;
+    width: 40%;
 }
 #temperature {
     font-size: 80px;
