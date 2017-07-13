@@ -1,16 +1,62 @@
 html {
     background: url("../img/wiki.jpg") no-repeat center center fixed;
     background-size: cover;
+}
+html , input, button{
     font-family: 'Libre Franklin', sans-serif;
 }
 .container {
-    background-color:rgba(255,255,255,0.4);
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 0 auto;
+   /* background-color:rgba(255,255,255,0.4);
+    margin: 10%;
+    width: 0 auto;*/
 }
 h1 {
+    color: white;
     text-align: center;
     font-size: 4em;
     font-weight: 100;
+}
+input {
+  border: solid 1px gainsboro;
+  display: block;
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0 auto;
+  width: 60%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  -ms-border-radius: none;
+  -o-border-radius: none;
+  border-radius: none;
+  padding: 10px;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+input:focus {
+  outline: none;
+}
+button {
+    display: block;
+    cursor: pointer;
+    padding: 0.8em 1em;
+    box-shadow: none;
+    margin: 0 auto;
+    border: solid 2px #482261;
+    background: #482261;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 2em;
+}
+button:hover {
+    border: solid 3px white;
+}
+.fa-search {
+    color: white;
 }
