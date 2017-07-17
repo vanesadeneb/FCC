@@ -2,19 +2,15 @@ html {
     background: url("../img/wiki.jpg") no-repeat center center fixed;
     background-size: cover;
 }
-html , input, button{
+body , input, button{
     font-family: 'Libre Franklin', sans-serif;
 }
-.container {
-   /* background-color:rgba(255,255,255,0.4);
-    margin: 10%;
-    width: 0 auto;*/
-}
+
 h1 {
     color: white;
-    text-align: center;
     font-size: 4em;
     font-weight: 100;
+    text-align: center;
 }
 input {
   border: solid 1px gainsboro;
@@ -43,20 +39,42 @@ input:focus {
   outline: none;
 }
 button {
-    display: block;
-    cursor: pointer;
-    padding: 0.8em 1em;
-    box-shadow: none;
-    margin: 0 auto;
-    border: solid 2px #482261;
     background: #482261;
+    border: solid 2px #482261;
+    box-shadow: none;
     color: white;
+    cursor: pointer;
+    display: block;
     font-size: 1em;
+    margin: 0 auto;
     margin-bottom: 2em;
+    padding: 0.8em 1em;
 }
 button:hover {
     border: solid 3px white;
 }
 .fa-search {
     color: white;
+}
+.searchButton{
+    background: #2B7E91;
+    border: solid 2px #2B7E91;
+    margin-top: 2em;
+    padding: 0.5em .8em;
+}
+ul {
+    list-style: none;
+    margin:0 auto;
+    padding: 0;
+    width: 80%;
+}
+li {
+    background: white;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+a {
+    color: #482261;
+    font-size: 1.5em;
+    text-decoration: none;
 }
