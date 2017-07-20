@@ -8,6 +8,7 @@ var getArticle = function(){
         async: false,
         dataType: "json",
         success: function(data){
+            $(".articles").html("");
             for(var i = 0; i < data[1].length; i++){
                 $(".articles").prepend("<li><a href='" + data[3][i] + "'>" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
             }
