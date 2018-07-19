@@ -1,0 +1,41 @@
+main{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+    width: 40em;
+    margin: auto;
+}
+header{
+    background-color: #053138;
+    color: #FFFCF0;
+    text-align: center;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 100;
+}
+form{
+    color: #0C2733;
+    padding: 0 1em;
+}
+h1{
+    text-transform: uppercase;
+}
+p{
+    color: #8C2131;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+input{
+    margin-left: 5px;
+}
+.text-color{
+    margin-left: 10px;
+    color: #8C2131;
+}
+#name, #email, #number{
+    width: 80%;
+    padding: 5px;
+}
+#name-label, #email-label, #number-label, #improved-label, #role-label, #comments-label,legend{
+    font-size: 1em;
+}
