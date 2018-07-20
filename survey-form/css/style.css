@@ -1,7 +1,7 @@
 main{
     font-family: 'Roboto', sans-serif;
     line-height: 2;
-    width: 40em;
+    width: 50%;
     margin: auto;
 }
 header{
@@ -26,16 +26,57 @@ p{
     text-align: center;
 }
 input{
-    margin-left: 5px;
+    margin-left: 6px;
 }
 .text-color{
     margin-left: 10px;
     color: #8C2131;
 }
-#name, #email, #number{
+#name, #email{
     width: 80%;
     padding: 5px;
 }
-#name-label, #email-label, #number-label, #improved-label, #role-label, #comments-label,legend{
+#number{
+    width: 6em;
+    margin-left: 1.3em;
+    padding: 5px;
+}
+#name{
+    margin-left: 3px;
+}
+#name-label, #email-label, #number-label, #role-label, #comments-label,legend{
     font-size: 1em;
+}
+#dropdown{
+    padding: 5px;
+    color: #8C2131;
+}
+#comments{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    height: 5em;
+    width: 100%;
+}
+#submit{
+    border-color: #053138; 
+    background-color: #053138;
+    color:#FFFCF0;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 0.75em;
+    text-transform: uppercase;
+    width: 11em;
+}
+
+#submit:hover {
+    border-color: #1C1A21;
+    background-color: #1C1A21;
+    color:#FFFCF0;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 0.75em;
+    text-transform: uppercase;
+    width: 11em;
 }

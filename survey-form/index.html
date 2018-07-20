@@ -17,11 +17,11 @@
       <p id="description">Let us know how we can improve freeCodeCamp</p>
       <form id="survey-form" action="">
         <label for="name" id="name-label">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+        <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
         <label for="email" id="email-label">Email:</label>
         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" required><br>
         <label for="age" id="number-label">Age:</label>
-        <input type="number" name="age" id="number" placeholder="Enter your age" required><br>
+        <input type="number" name="age" id="number" placeholder="Enter age" min=1 max=100 required><br>
         <label for="role" id="role-label">Which option best describes your current role?</label><br>
         <select name="dropdown" id="dropdown">
           <option selected class="text-color">Select an option</option>
@@ -31,18 +31,19 @@
         </select><br>
         <fieldset>
           <legend>Which option best describes your current role?</legend>
-          <input type="radio" name="current-role"><label for="definitly" class="text-color">Definitly</label><br>
-          <input type="radio" name="current-role"><label for="maybe" class="text-color">Maybe</label><br>
-          <input type="radio" name="current-role"><label for="not-sure" class="text-color">Not sure</label><br>
+          <input type="radio" name="current-role" value="definitly"><label for="definitly" class="text-color">Definitly</label><br>
+          <input type="radio" name="current-role" value="maybe"><label for="maybe" class="text-color">Maybe</label><br>
+          <input type="radio" name="current-role" value="not-sure"><label for="not-sure" class="text-color">Not sure</label><br>
         </fieldset>
-        <label for="improved" id="improved-label">Things that should be improved in the future
-            (Check all that apply):</label><br>
-            <input type="checkbox" name="improved" id="frontend" value="frontend"><label for="frontend" class="text-color">Front-end Projects</label><br>
-            <input type="checkbox" name="improved" id="backend" value="backend"><label for="backend" class="text-color">Back-end Projects</label><br>
-            <input type="checkbox" name="improved" id="datav" value="datav"><label for="datav" class="text-color">Data Visualization</label><br>
-            <input type="checkbox" name="improved" id="challenge" value="challenge"><label for="challenge<" class="text-color">Challenges</label><br>
+        <fieldset>
+          <legend>Things that should be improved in the future (Check all that apply):</legend>
+          <input type="checkbox" name="improved" id="frontend" value="frontend"><label for="frontend" class="text-color">Front-end Projects</label><br>
+          <input type="checkbox" name="improved" id="backend" value="backend"><label for="backend" class="text-color">Back-end Projects</label><br>
+          <input type="checkbox" name="improved" id="datav" value="datav"><label for="datav" class="text-color">Data Visualization</label><br>
+          <input type="checkbox" name="improved" id="challenge" value="challenge"><label for="challenge<" class="text-color">Challenges</label><br>
+        </fieldset>
             <label for="comments" id="comments-label">Any Comments or Suggestions?</label><br>
-            <textarea placeholder="Enter your comments"></textarea><br>
+            <textarea placeholder="Enter your comments" id="comments"></textarea><br>
             <button type="submit" id="submit">Submit</button>
       </form>
     </section>
