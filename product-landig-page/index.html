@@ -87,32 +87,60 @@
     <section id="video-container">
       <h4>And so much more...</h4>
       <iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/0_ac32AVTgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>    
-    <section>
+    </section>
+    <section id="buy-container">
       <h3>Buy Now</h3>
-      <figure>
-        <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_2048x2048.png?v=1506535251" alt="sickday-product">
-        <figcaption>
-          <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_50x50.png?v=1506535251" alt="sickday-product-small">
-          <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0022_50x50.JPG?v=1506535251" alt="sickday-product-inside">
-        </figcaption>
-      </figure>
-      <article id="product-details">
-        <h4>Sick Day Box</h4>
-        <p>$29.00 <span>$39.00</span></p>
-        <form action="">
-          <label for="quantity">Quantity</label>
-          <input type="number" value="1" name="quantity">
-          <input type="submit" value="Add to cart">
-        </form>
-        <p>Stash it till you need it. Your future self will thank you.</p>
+      <article id="buy">  
+        <figure>
+          <img id="product" src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_2048x2048.png?v=1506535251" alt="sickday-product">
+          <figcaption>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_50x50.png?v=1506535251" alt="sickday-product-small">
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0022_50x50.JPG?v=1506535251" alt="sickday-product-inside">
+          </figcaption>
+        </figure>
+        <article id="product-details">
+          <h4>Sick Day Box</h4>
+          <p>$29.00 <span id="original-money">$39.00</span></p>
+          <form action="">
+            <label for="quantity">Quantity</label>
+            <input id="quantity" type="number" value="1" name="quantity">
+            <input class="btn" type="submit" value="Add to cart">
+          </form>
+          <p>Stash it till you need it. Your future self will thank you.</p>
+        </article>
       </article>
     </section>
-    <form action="https://www.freecodecamp.com/email-submit" id="form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
-      <input type="submit" id="submit" value="submit">
-    </form>
+    <section id="gift-container">
+      <h3>For someone you care about</h3>
+      <article id="gift">
+        <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/gift_660x440.png?v=1511491441" alt="gift-product">
+        <section id="desc-gift">
+          <h4>Perfect for the less than prepared students, friends, and coworkers in your life.</h4>
+          <p>Send Sick Day Box to that special someone to show them you care. Sometimes we all need a mom-in-a-box to make sure there is soup and ginger ale on hand for the next time we wake up feeling sick. Who wants to run out to the store on a sick day?</p>
+          <a href="#buy" class="btn">Gift It</a>
+        </section>
+      </article>
+    </section>
+    <section id="pack-container">
+      <article id="pack">
+        <section id="desc-pack">
+          <h4>Stock up the office.</h4>
+          <p>Weather any storm with a 3 pack of Sick Day Boxes for the office.</p>
+          <a href="#" class="btn">Buy A 3 Pack</a>
+        </section>
+        <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/office_660x440.png?v=1511493315" alt="3-pack">
+      </article>
+    </section>
+    <section id="subscribe-container">
+      <article id="subscribe">
+        <h3>Health Tips & Discounts</h3>
+        <p>Subscribe to our newsletter to get discounts and tips to stay healthy.</p>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="your@email.com">
+          <input class="btn" type="submit" id="submit" value="subscribe">
+        </form>
+      </article>
+    </section>    
   </section>
 </body>
 </html>
