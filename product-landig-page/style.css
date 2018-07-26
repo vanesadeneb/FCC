@@ -53,7 +53,7 @@ main, #gift,#module-inner, #buy, #pack, #subscribe{
 }
 #module-container{
     display: flex;
-    margin-top: 7em;
+    margin: 7em 0em;
 }
 #module-inner-principal{
     color: white;
@@ -63,7 +63,7 @@ main, #gift,#module-inner, #buy, #pack, #subscribe{
     font-family: "Montserrat",sans-serif;
 }
 #title{
-    font-size: 4rem;
+    font-size: 4em;
     font-weight: bold;
     margin-bottom: 0;
     line-height: 1.25;
@@ -75,7 +75,7 @@ main, #gift,#module-inner, #buy, #pack, #subscribe{
 #price{
     font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 22px;
+    margin-bottom: 44px;
 }
 #main-img{
     margin-left: 3em;
@@ -198,4 +198,12 @@ h4{
     margin-right: 15px;
     padding: 10px;
     width: 30%;
+}
+@media (max-width: 1160px) {
+    #img-container {
+        flex-basis: 40%;
+    }
+    #nav-bar{
+        flex-basis: 50%;
+    }
 }
