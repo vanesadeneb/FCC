@@ -9,22 +9,24 @@
   <title>Product Landing Page</title>
 </head>
 <body>
-  <div id="container">
-    <header id="header">
-      <div id="img-container">
-        <img id="header-img" src="http://cdn.shopify.com/s/files/1/2225/6647/files/sick_day_box_logo_white_300x90@2x.png?v=1505836370" alt="sickday-img">
-      </div>
-      <nav id="nav-bar">
-        <ul>
-          <li class="nav-link"><a href="#buy">Buy Now</a></li>
-          <li class="nav-link"><a href="#gift">Gift It</a></li>
-          <li class="nav-link"><a href="#pack">Buy a 3 pack</a></li>
-        </ul>
-      </nav>
-    </header>
+  <section id="container">
+    <section id="header-container">
+      <header id="header">
+        <section id="img-container">
+          <img id="header-img" src="http://cdn.shopify.com/s/files/1/2225/6647/files/sick_day_box_logo_white_300x90@2x.png?v=1505836370" alt="sickday-img">
+        </section>
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav-link"><a href="#buy">Buy Now</a></li>
+            <li class="nav-link"><a href="#gift">Gift It</a></li>
+            <li class="nav-link"><a href="#pack">Buy a 3 pack</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
     <main>
       <section id="module-container">
-        <article class="module-inner">
+        <article id="module-inner-principal">
           <h1 id="title">The Sick Day Survival Kit</h1>
           <h2 id="subtitle">Everything you need to make it through a sick day.</h2>
           <p id="price">Only $29</p>
@@ -34,26 +36,83 @@
       </section>
     </main>
     <section id="desc-product">
-      <div class="module-inner">
+      <section id="module-inner">
         <h3>What's Inside</h3>
-        <figure>
-          <img src="http//cdn.shopify.com/s/files/1/2225/6647/files/12_660x275.png?v=1511141559" alt="rental">
-          <figcaption></figcaption>
-        </figure>
-      </div>
+        <article id="items">
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/12_660x275.png?v=1511141559" alt="rental">
+            <figcaption>
+              <h4>Amazon Movie Rental</h1>
+              <p>Included in the box is a gift card for one movie rental from Amazon.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/10_660x275.png?v=1511141827" alt="thermometer">
+            <figcaption>
+              <h4>Thermometer</h1>
+              <p>You know the old "hand on the forehead trick" doesn't cut it.</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/6_660x275.png?v=1511141877" alt="emergen-c">
+            <figcaption>
+              <h4>Emergen-C</h1>
+              <p>Immune boosting Vitamin C, B Vitamins, and Electrolytes. It's never too late</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/4_660x275.png?v=1511142158" alt="hot-cocoa">
+            <figcaption>
+              <h4>Hot Cocoa</h1>
+              <p>Because not all drinks needs to be "healthy" when you are sick</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/chickensoupsaltinecombo_660x275.png?v=1511142309" alt="food">
+            <figcaption>
+              <h4>Saltines + Checken Noodle Soup</h1>
+              <p>What's a sick day without some chicken noodle soup and some Saltines in the mix?</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="http://cdn.shopify.com/s/files/1/2225/6647/files/11_660x275.png?v=1511142417" alt="food">
+            <figcaption>
+              <h4>Ginger Drops</h1>
+              <p>Feeling queasy? These ginger candies are a safe and tasty fix.</p>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+    </section>
+    <section id="video-container">
+      <h4>And so much more...</h4>
+      <iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/0_ac32AVTgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </section>    
-    <!--
     <section>
-        <iframe id="video" width="854" height="480" src="https://www.youtube.com/embed/0_ac32AVTgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h3>Buy Now</h3>
+      <figure>
+        <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_2048x2048.png?v=1506535251" alt="sickday-product">
+        <figcaption>
+          <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0004_50x50.png?v=1506535251" alt="sickday-product-small">
+          <img src="http://cdn.shopify.com/s/files/1/2225/6647/products/IMG_0022_50x50.JPG?v=1506535251" alt="sickday-product-inside">
+        </figcaption>
+      </figure>
+      <article id="product-details">
+        <h4>Sick Day Box</h4>
+        <p>$29.00 <span>$39.00</span></p>
+        <form action="">
+          <label for="quantity">Quantity</label>
+          <input type="number" value="1" name="quantity">
+          <input type="submit" value="Add to cart">
+        </form>
+        <p>Stash it till you need it. Your future self will thank you.</p>
+      </article>
     </section>
-  -->
-    <section>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
-        <input type="submit" id="submit" value="submit">
-      </form>
-    </section>
-  </div>  
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email">
+      <input type="submit" id="submit" value="submit">
+    </form>
+  </section>
 </body>
 </html>
