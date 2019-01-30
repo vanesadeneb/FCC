@@ -1,7 +1,13 @@
-#navbar{
-    float: left;
-    border: 1px solid black;
+body{
+    display:flex;
+    font-family: 'Noto Serif SC', serif;
 }
-#main-doc{
-    float: right;
+nav ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-family: 'Sarabun', sans-serif;
 }
