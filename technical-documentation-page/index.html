@@ -4,9 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML 5 Documentation</title>
 </head>
 <body>
+  <nav id="navbar">
+    <header id="html_documentation">HTML documentation</header>
+    <a href="#introduction" class="nav-link">Introduction</a>
+    <a href="#support" class="nav-link">Browser Support</a>
+    <a href="#new_elements" class="nav-link">New Elements</a>
+    <a href="#semantic" class="nav-link">Semantic Elements</a>
+    <a href="#migration" class="nav-link">Migration</a>
+    <a href="#style_guide" class="nav-link">Style Guide and Coding Conventions</a>
+  </nav>
   <main id="main-doc">
     <section class="main-section" id="introduction">
       <header>Introduction</header>
@@ -23,27 +34,137 @@
         </ul>
         <h2>A Simple HTML Document</h2>
         <h3>Example</h3>
-        <code><span><</span>!DOCTYPE html<span>></span></code><br>
-        <code><span><</span>html<span>></span></code><br>
-        <code><span><</span>head<span>></span></code><br>
-        <code><span><</span>title<span>></span>Page Title<span><</span>/title<span>></span></code><br>
-        <code><span><</span>/head<span>></span></code><br>
-        <code><span><</span>body<span>></span></code><br><br>
-        <code><span><</span>h1<span>></span>My First Heading<span><</span>/h1<span>></span></code><br>
-        <code><span><</span>p<span>></span>My first paragraph.<span><</span>/p<span>></span></code><br><br>
-        <code><span><</span>/body<span>></span></code><br>
-        <code><span><</span>/html<span>></span></code><br>
+        <code>
+          &lt;!DOCTYPE &lt;html><br>
+          &lt;html><br>
+          &lt;head><br>
+          &lt;title>Page Title/title><br>
+          &lt;/head><br>
+          &lt;body><br><br>
+          &lt;h1>My First Heading&lt;/h1><br>
+          &lt;p>My first paragraph.&lt;/p><br><br>
+          &lt;/body><br>
+          &lt;/html><br>
+      </code>
       </article>
     </section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
-    <section class="main-section"></section>
+    <section class="main-section" id="support">
+      <header>HTML5 Browser Support</header>
+      <p>HTML5 is supported in all modern browsers.</p>
+      <p>In addition, all browsers, old and new, automatically handle unrecognized elements as inline elements</p>
+      <p>Because of this you can "teach" older browsers to handle "unknown" HTML elements.</p>
+      <h2>Define Semantic Elements as Block Elements</h2>
+      <p>HTML5 defines eight new <b>semantic</b> elemets. All these are <b>block-level</b> elements.</p>
+      <p>To secure correct behavior in older browsers, you can set the CSS <b>display</b> property for these HTML elements yo <b>block</b></p>
+      <code>
+        header, section, footer, aside, nav, main, article, figure { <br>
+          display: block;<br>
+        }
+      </code>
+    </section>
+    <section class="main-section" id="new_elements" >
+      <header>HTML5 New Elements</header>
+      <h2>New elements in HTML5</h2>
+      <p>Below is a list on the new HTML5 elements, and a description of what they are used for.</p>
+      <h2>New Semantic/Structural Elements</h2>
+      <p>HTML5 offers new elements for better document structure:</p>
+      <table>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><ins>&lt;article></ins></td>
+          <td>Defines an article in a document</td>
+        </tr>
+        <tr>
+            <td><ins>&lt;aside></ins></td>
+            <td>Defines content aside from the page content</td>
+        </tr>
+        <tr>
+          <td><ins>&lt;bdi></ins></td>
+          <td>Isolates a part of text that might be formatted in a different direction from other text outside it</td>
+        </tr>
+        <tr>
+          <td><ins>&lt;details></ins></td>
+          <td>Defines additional details that the user can view or hide</td>
+        </tr>
+        <tr>
+          <td><ins>&lt;dialog></ins></td>
+          <td>Defines a dialog box or window</td>
+        </tr>
+        <tr>
+          <td><ins>&lt;figcaption></ins></td>
+          <td>Defines a caption for a &lt;figure> element</td>
+        </tr><tr>
+          <td><ins>&lt;figure></ins></td>
+          <td>Defines self-contained content</td>
+        </tr>
+      </table>
+    </section>
+    <section class="main-section" id="semantic">
+      <header>HTML5 Semantic Elements</header>
+      <p>Semantics is the study of the meanings of words and phrases in a lenguage.</p>
+      <p>Semantic elements = elements with  meaning.</p>
+      <h2>What are Semantic Elements?</h2>
+      <p>A semantic element clearly describes ith a meaning to both the browser and the developer.</p>
+      <p>Examples of <b>non-semantic</b> elements: <code>&lt;div></code> and <code>&lt;span></code> - Tells nothing about its content.</p>
+      <p>Example of <b>semantic</b>elements: <code>&lt;form>, &lt;table>, and &lt;article></code> - Clearly defines its content.</p>
+    </section>
+    <section class="main-section" id="migration"> 
+      <header>HTML5 Migration</header>
+      <h2>HTML5 from HTML4 to HTML5</h2>
+      <p>This chapter is entirely about how to migrate from HTML4 to HTML5.</p>
+      <p>This chapter demonstrates how to convert an HTML4 page into an HTML5 page, without destroying anything of the original content or structure.</p>
+      <table>
+        <tr>
+          <th>Typical HTML4</th>
+          <th>Typical HTML5</th>
+        </tr>
+        <tr>
+          <td>&lt;div id="header"></div></td>
+          <td>&lt;header></td>
+        </tr>
+        <tr>
+          <td>&lt;div id="menu"></td>
+          <td>&lt;nav></td>
+        </tr>
+        <tr>
+          <td>&lt;div id="content"></td>
+          <td>&lt;section></td>
+        </tr>
+        <tr>
+          <td>&lt;div class="article"></td>
+          <td>&lt;article></td>
+        </tr>
+        <tr>
+          <td>&lt;div id="footer"></td>
+          <td>&lt;footer></td>
+        </tr>
+      </table>
+    </section>
+    <section class="main-section" id="style_guide">
+      <header>HTML5 Style Guide and Coding Conventions</header>
+      <h2>HTML Coding Conventions</h2>
+      <p>Web developers are often uncertain about the coding style and syntax to use in HTML.</p>
+      <p>Between 2000 and 2010, many web developers converted from HTML to XHTML.</p>
+      <p>With XHTML, developers were forced to write valid and "well-formed" code.</p>4
+      <p>HTML5 is a bit more sloppy when it comes to code validation.</p>
+      <h2>Be Smart and Future Proof</h2>
+      <p>A consistent use of style makes it easier for others to understand your HTML.</p>
+      <p>In the future, programs like XML readers may want to read your HTML.</p>
+      <p>Using a well-formed-"close to XHTML" syntax can be smart.</p>
+      <span>Always keep your code tidy, clean and well-formed.</span>
+      <h2>Use Correct Document Type</h2>
+      <p>Always declare the document type as the first line in your document:</p>
+      <code>
+        &lt;!DOCTYPE html> 
+      </code>
+      <p>If you want consistency with lower case tags, you can use:</p>
+      <code>
+        &lt;!doctype html>
+      </code>
+    </section>
   </main>  
 </body>
 </html>
