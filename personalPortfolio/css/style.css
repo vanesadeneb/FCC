@@ -1,0 +1,49 @@
+body{
+    font-family: 'Quicksand';
+    color: #56BF84;
+}
+#navbar{
+    background-color:#46718C;
+    padding: 0.6em;
+}
+#navbar ul {
+    margin-right: 1em;
+    text-align: right;
+}
+#navbar li{
+    display: inline;
+    padding: 1em;
+}
+#navbar li:hover{
+    background-color:#7EBFAD;
+}
+a{
+    color: #F2E2CE;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+#navbar li a:hover {
+    border-bottom: solid 2px #396273;
+}
+#welcome-section{
+    margin: 0 auto;
+    text-align: center;
+    font-family: Raleway;
+    height: 600px;
+}
+#welcome-section h1{
+    letter-spacing: 1pt;
+    font-size: 5em;
+    font-weight: normal;
+    color: #56BF84;
+    margin-top: 200px;
+}
+#welcome-section p{
+    color:#46718C;
+    font-size: 2em;
+    letter-spacing: 1pt;
+    font-family: 'Dancing Script';
+}
+#projects{
+    background-color: #46718C;
+}
